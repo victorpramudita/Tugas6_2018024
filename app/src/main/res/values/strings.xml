@@ -2,21 +2,23 @@
     <string name="app_name">Layanan terminal</string>
     <string name="Open">Open</string>
     <string name="Close">Close</string>
-    <string name="deskription_menu">Service motor dengan ganti oli lebih bagus</string>
-    <string name="pilihan_service">Service + ganti Oli </string>
-    <string name="price">Rp. 100.000 </string>
+    <string name="deskription_menu">Kendaraan Kelas menengah, memiliki jangkauan antar kota dengan sarana full AC dan patas</string>
+    <string name="price">Harga Tiket</string>
     <string name="Harga_Service">Rp. 100.000 </string>
 
-    <string-array name="service">
-        <item>Service Spear Part</item>
-        <item>Ganti Oli</item>
+    <string-array name="data">
+        <item>Angkot</item>
+        <item>Taxi</item>
+        <item>Becak</item>
     </string-array>
     <string-array name="star">
         <item>4.4</item>
+        <item>4.7</item>
         <item>4.9</item>
     </string-array>
     <string-array name="deskripsi">
         <item>Rp. 10.000</item>
         <item>Rp. 15.000</item>
+        <item>Rp. 20.000</item>
     </string-array>
 </resources>

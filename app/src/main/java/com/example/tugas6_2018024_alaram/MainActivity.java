@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
     // tugas recycle view
     RecyclerView recylerView;
     String s1[], s2[],s3[];
-    int images[] = {R.drawable.service2,R.drawable.service3};
+    int images[] = {R.drawable.angkot,R.drawable.taxi,R.drawable.becak};
 
     private DrawerLayout dl;
     private ActionBarDrawerToggle abut;
@@ -29,10 +29,10 @@ public class MainActivity extends AppCompatActivity {
 
         setContentView(R.layout.activity_main);
         recylerView = findViewById(R.id.recyclerView);
-        s1 = getResources().getStringArray(R.array.service);
+        s1 = getResources().getStringArray(R.array.data);
         s2 = getResources().getStringArray(R.array.deskripsi);
         s3 = getResources().getStringArray(R.array.star);
-        ServiceAdapter appAdapter = new ServiceAdapter(this, s1, s2, s3, images);
+        DataAdapter appAdapter = new DataAdapter(this, s1, s2, s3, images);
         recylerView.setAdapter(appAdapter);
         LinearLayoutManager layoutManager  = new LinearLayoutManager(MainActivity.this,LinearLayoutManager.HORIZONTAL,false);
         recylerView.setLayoutManager(layoutManager);

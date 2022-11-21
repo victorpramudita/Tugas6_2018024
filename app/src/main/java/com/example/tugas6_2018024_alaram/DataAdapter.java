@@ -10,10 +10,10 @@ import androidx.annotation.NonNull;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
 
-public class ServiceAdapter extends RecyclerView.Adapter<ServiceAdapter.ServiceViewHolder> {
+public class DataAdapter extends RecyclerView.Adapter<DataAdapter.dataViewHolder> {
     String data1[], data2[], data3[]; int images[];
     Context context;
-    public ServiceAdapter(Context ct, String s1[], String s2[], String s3[], int img[]){
+    public DataAdapter(Context ct, String s1[], String s2[], String s3[], int img[]){
         context = ct;
         data1 = s1;
         data2 = s2;
@@ -22,13 +22,13 @@ public class ServiceAdapter extends RecyclerView.Adapter<ServiceAdapter.ServiceV
     }
     @NonNull
     @Override
-    public ServiceAdapter.ServiceViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public DataAdapter.dataViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         LayoutInflater layoutInflater = LayoutInflater.from(parent.getContext());
-        View view = layoutInflater.inflate(R.layout.item_service, parent, false);
-        return new ServiceViewHolder(view);
+        View view = layoutInflater.inflate(R.layout.item_data, parent, false);
+        return new dataViewHolder(view);
     }
     @Override
-    public void onBindViewHolder(@NonNull ServiceAdapter.ServiceViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull DataAdapter.dataViewHolder holder, int position) {
         holder.myText1.setText(data1[position]);
         holder.myText2.setText(data2[position]);
         holder.star.setText(data3[position]);
@@ -38,11 +38,11 @@ public class ServiceAdapter extends RecyclerView.Adapter<ServiceAdapter.ServiceV
     public int getItemCount() {
         return images.length;
     }
-    public class ServiceViewHolder extends RecyclerView.ViewHolder {
+    public class dataViewHolder extends RecyclerView.ViewHolder {
         TextView myText1, myText2, star;
         ImageView myImage;
         ConstraintLayout mainLayout;
-        public ServiceViewHolder(View itemView) {
+        public dataViewHolder(View itemView) {
             super(itemView);
             myText1 = itemView.findViewById(R.id.myText1);
             myText2 = itemView.findViewById(R.id.myText2);

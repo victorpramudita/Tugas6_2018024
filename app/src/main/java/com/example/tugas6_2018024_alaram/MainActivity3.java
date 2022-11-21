@@ -128,7 +128,7 @@ public class MainActivity3 extends AppCompatActivity {
     private void createNotificationChannel() {
         //mendeskripsikan channel notifikasi yang akan dibangun
         CharSequence name = "INI ALARM MANAGER";
-        String description = "Alarm untuk service motor";
+        String description = "Hai, Angkutanmu akan segera berangkat !";
         //tingkat importance = high ( penting sekali )
         int importance = NotificationManager.IMPORTANCE_HIGH;
         NotificationChannel channel = new NotificationChannel("AlarmManager", name, importance);

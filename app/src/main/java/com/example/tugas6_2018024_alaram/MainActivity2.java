@@ -17,8 +17,7 @@ public class MainActivity2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
         dl = (DrawerLayout)findViewById(R.id.dl);
-        abut = new
-                ActionBarDrawerToggle(this,dl,R.string.Open,R.string.Close);
+        abut = new ActionBarDrawerToggle(this,dl,R.string.Open,R.string.Close);
         abut.setDrawerIndicatorEnabled(true);
         dl.addDrawerListener(abut);
         abut.syncState();
